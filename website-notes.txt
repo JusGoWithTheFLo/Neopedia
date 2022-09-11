@@ -1,0 +1,48 @@
+NEOPEDIA?
+
+*HOME
+	-"Welcome"
+		"Neopedia is an excyclopedia about <a>Neopolis</a> to which anyone can contribute.  You're welcome to browse for a while, or <a>make an account to start editing pages</a> (COMING SOON!)"
+		"If you have any questions, first see <a>FAQ page</a>.  If this doesn't help, find an active <a>staff member</a>. They'll point you in the right direction!"
+
+	-"Today is <date>"
+		-container of Neopolis twitter page
+	
+	-GAME NEWS
+		-container with game news
+
+	-"Message from the Editor"
+
+*ABOUT
+
+*DATABASE
+	COUNTRIES
+	CITIES
+	BUILDINGS
+	POIs
+	ESTATE
+
+*EMPLOYEES
+	SUPER | description
+	employee | LV1 | LV2 | LV3
+
+*BLUEPRINTS
+	blueprint | LV1 | LV2 | LV3 | LV4
+
+
+*LANDMARKS
+
+
+
+*AVATARS
+	picture | name | story
+
+
+*COSMETICS
+	building styles
+		"a style gives a different appearance to your buildings. Once acquired, it is possible to apply and remove it as you wish on buildings of the corresponding type. A building style does not grant any bonus. A puchased style will remain on your profile from season to season."
+		TITLE/picture
+			picture		| picture		| picture
+			OFFICE LEVEL I	| OFFICE LEVEL II	| OFFICE LEVEL III
+
+*Discord
