@@ -63,7 +63,7 @@
 
 /*----------ROOT & HTML STYLES-------------*/
 :root {
-    --dark-blue: #232135;
+    --dark-blue: #232135; /*-rgba(35,33,53,1.000)-*/
     --purple: #602bb6;
 }
 
@@ -85,6 +85,7 @@ body {
     background: var(--dark-blue);
     color: white;
     width: 100%;
+    letter-spacing: .1em;
 }
 
 nav {
@@ -244,7 +245,13 @@ a:active {
     padding: 20px;
     position: relative;
     gap: 20px;
-
+    border-radius: 5px;
+    background-image: url("../assets/Screens/Splashscreen_SUMMER.png");
+    background-color: var(--dark-blue);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
 }
 
 #welcome img {
@@ -297,16 +304,31 @@ a:active {
 /*----------ABOUT CONTAINERS-------------*/
 /*----------DATABASE CONTAINERS-------------*/
 /*----------DATABASE-EMPLOYEES CONTAINERS-------------*/
+#main-employee {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/Screens/Splashscreen_SUMMER.png") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 #employee-title {
     display: flex;
     max-width: 1000px;
-    padding: 1em;
+    padding: 40px 1em;
     margin: 0 auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     row-gap: 20px;
+    background-color: rgba(35,33,53,.75);
+    border-radius: 5px;
+
 }
 
 #employee-title h1 {
@@ -318,9 +340,10 @@ a:active {
 #employee-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin: 0 auto;
+    margin: 10px auto;
     max-width: 1000px;
-    padding: 1em;
+    border: 1px solid var(--purple);
+    border-radius: 5px;
 }
 
 #employee-grid .box {
@@ -331,6 +354,7 @@ a:active {
     align-items: center;
     padding: .6em;
     border: 1px solid var(--purple);
+    background-color: var(--dark-blue);
 }
 
 #employee-grid .grid-title {
@@ -349,8 +373,13 @@ a:active {
     font-size: 1.1em;
 }
 
+.emp {
+    font-weight: bold;
+}
+
 .emp>img {
     max-width: 130px;
     height: auto;
 }
+
 
