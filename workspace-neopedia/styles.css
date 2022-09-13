@@ -65,6 +65,7 @@
 :root {
     --dark-blue: #232135; /*-rgba(35,33,53,1.000)-*/
     --purple: #602bb6;
+    --default-font: 'Open Sans', sans-serif, Arial, Helvetica;
 }
 
 *, ::before, ::after {
@@ -81,7 +82,7 @@ html {
 
 body {
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-family: var(--default-font);
     background: var(--dark-blue);
     color: white;
     width: 100%;
@@ -132,7 +133,7 @@ main {
     display: none;
     margin: 0;
     list-style: none;
-    width: 120%;
+    min-width: 120%;
     background: var(--dark-blue);
     padding: 0;
 
@@ -394,3 +395,110 @@ a:active {
 }
 
 
+/*----------CONTACT CONTAINERS-------------*/
+.contact-containers {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    gap: 20px;
+    border-radius: 5px;
+    background-image: url("../assets/Screens/Splashscreen_SUMMER.png");
+    background-color: var(--dark-blue);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+#contact img {
+    max-height: 250px;
+    height: 100%;
+    max-width: 150px;
+}
+
+.contact-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    row-gap: 20px;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1000px;
+    width: 80%;
+    margin: 20px auto 20px auto;
+    padding: 20px;
+    row-gap: 20px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+#contact-form form {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    row-gap: 10px;
+}
+
+#contact-form h3 {
+    text-align: center;
+    background: var(--purple);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#contact-form > form > fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    row-gap: 20px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#contact-form > form > fieldset > input,
+#contact-form > form > fieldset > label > textarea,
+#contact-form > form > fieldset > label > select {
+    padding: 10px;
+    border-radius: 5px;
+    font-family: var(--default-font);
+}
+
+#contact-form > form > fieldset > label {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#contact-form > form > button {
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--purple);
+    color: white;
+    transition: .5s;
+}
+
+#contact-form > form > button:hover {
+    background-color: gold;
+    color: var(--purple);
+    font-weight: bolder;
+    cursor: pointer;
+}
