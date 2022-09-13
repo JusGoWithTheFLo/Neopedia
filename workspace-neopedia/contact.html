@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="styles.css" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css"/>
+        <link type="text/javascript" src="script.js" />
         <title>Neopolis | Neopedia</title>
         <!--DISCORD WIDGETBOT-->
         <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
@@ -61,7 +62,7 @@
                             <!--Web3-->
                             <!--Twitter-->
                             <!--YouTube-->
-                            <li><a href="./contact.html">CONTACT</a></li><!--CONTACT-->
+                            <li><a href="./contact.html">SUGGESTIONS</a></li><!--Suggestions-->
                         </ul>
                     </div>
                     <a href="https://discord.gg/64vBDx5wcm">DISCORD</a>
@@ -70,34 +71,45 @@
         </header>
 
         <main>
-            <div class="welcome-containers">
-                <div id="welcome">
+            <div class="contact-containers">
+                <div id="contact">
                     <img src="\assets\Estate badges\Landmarks\USA New York Statue of Liberty_Tutun.png" />
-                    <div class="welcome-text">
-                        <h1>Welcome to Neopedia!</h1>
-                        <p>Neopedia is a fan-made encyclopedia about <a href="">Neopolis</a>.  You're welcome to browse for a while, and feel free to drop any suggestions <a href="./contact.html">here</a>!</p>
+                    <div class="contact-text">
+                        <h1>CONTACT FORM</h1>
+                        <p>Neopedia is a fan-made encyclopedia about <a href="">Neopolis</a>.  Please feel free to fill out the form below with your feedback, suggestions, or comments on how we can make this page better!</p>
                         <p>If you have any questions, first see <a href="">FAQ page</a>.  If this doesn't help, find an active <a href="">staff member</a>.  They'll point you in the right direction!</p>
                     </div>
                     <img src="\assets\Mentor\WILL_standingRIGHT brasLEFTsimpleRIGHTwave faceFRONT smile3 eyes2.png" />
                 </div>
-                <div id="game-news">
-                    <h3>Neopolis Discord Announcements</h3>
-                    <p>Click on the Discord WidgetBot at the bottom-right corner of the page to see recent announcements</p>
-                    <p>
-                        <em>Announcements were forwarded from the <a>Neopolis Discord Server</a> to a separate server in order for this to work.
-                        </em>
-                    </p>
-                </div>
-                <div id="editor-message">
-                    <h3>Message From The Editor</h3>
-                    <p>DATE</p>
+                <div id="contact-form">
+                    <h3>Contact Form</h3>
                     <hr>
-                    <p>MESSAGE HERE</p>
-                    <p>LINE 2</p>
-                    <p>LINE 3</p>
-                    <p>Until next time!</p>
-                    <p>&nbsp JusGoWithTheFLo</p>
-                    <p>&nbsp Website Designer</p>
+                    <form id="form-contact-form" onsubmit="return postToGoogle();">
+                        <fieldset>
+                            <input name="entry.1572885822" id="IGN" type="text" placeholder="Neopolis Game Name" autocomplete="off" required />
+                            <input name="entry.165319336" id="email" type="email" placeholder="Email (optional)" autocomplete="off" />
+                            <input name="entry.1200198732" id="discord-id" type="text" placeholder="Discord ID" autocomplete="off" required />
+                            <label class="referrer">
+                                <p>How did you hear about us?</p>
+                                <select name="entry.311974235" id="referrer" required >
+                                    <option value="">(select one)</option>
+                                    <option value="1">Red Rogue Member</option>
+                                    <option value="2">In-Game Chat</option>
+                                    <option value="3">Discord</option>
+                                    <option value="4">Other</option>
+                                </select>
+                            </label>
+                            <label class="file">
+                                <p>Attach a file (10MB max): </p>
+                                <input name="entry.1111930695" id="file" type="file">
+                            </label>
+                            <label>
+                                <p>Message Here:</p>
+                                <textarea name="entry.1826451949" id="message" placeholder="Hi, we've been trying to reach you about your car's extended warranty..." rows="3" autocomplete="off" required ></textarea>
+                            </label>
+                        </fieldset>
+                        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                    </form>
                 </div>
             </div> 
         </main>
@@ -107,3 +119,8 @@
         </footer>
     </body>
 </html>
+
+
+
+
+
