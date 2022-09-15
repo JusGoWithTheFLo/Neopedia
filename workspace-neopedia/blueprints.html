@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css"/>
+        <title>Neopolis | Neopedia</title>
+        <!--DISCORD WIDGETBOT-->
+        <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
+            new Crate({
+                server: '987954290846994442', // Red Rogues
+                channel: '990006407321505803' // #📢︱game-announcements
+            })
+        </script>
+    </head>
+
+    <body>
+        <header>
+            <nav class="box-shadow">
+                <div id="nav-logo">
+                    <img src="\assets\Logos\app icon yellow.png" alt="Neopedia Logo" />
+                    <h2>NEOPEDIA</h2>
+                </div>
+                <div id="mobile-nav-links">
+                    <div class="dropdown">
+                        <a><i class="fa-solid fa-bars"></i></a>
+                        <ul class="dropdown-menu box-shadow">
+                            <li><a href="./index.html">HOME</a></li>
+                            <li><a href="./about.html">ABOUT</a></li>
+                            <li><a href="">DATABASE</a></li>
+                            <li><a href="https://discord.gg/64vBDx5wcm">DISCORD</a></li>
+                            <li><a href="">MORE</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="nav-links">
+                    <a href="./index.html">HOME</a>
+                    <a href="./about.html">ABOUT</a>
+                    <div class="dropdown">
+                        <a href="">DATABASE</a>
+                        <ul class="dropdown-menu box-shadow">
+                            <!---dropdown-->
+                            <!--COUNTRIES-->
+                            <!--CITIES-->
+                            <!--BUILDINGS-->
+                            <!--POIS-->
+                            <!--LANDMARKS-->
+                            <li><a href="./employees.html">EMPLOYEES</a></li><!--EMPLOYEES-->
+                            <li><a href="./blueprints.html">BLUEPRINTS</a></li><!--BLUEPRINTS-->
+                            <!--ESTATE-->
+                            <li><a href="./avatars.html">AVATARS</a></li><!--AVATARS-->
+                            <!--COSMETICS-->
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <a href="">MORE</a>
+                        <ul class="dropdown-menu box-shadow">
+                            <!--Official Website-->
+                            <!--Web3-->
+                            <!--Twitter-->
+                            <!--YouTube-->
+                            <li><a href="./contact.html">CONTACT</a></li><!--CONTACT-->
+                        </ul>
+                    </div>
+                    <a href="https://discord.gg/64vBDx5wcm">DISCORD</a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div id="main-blueprints">
+                <div id="blueprints-title">
+                    <h1>BLUEPRINTS</h1>
+                    <p>Each building is generated with 3 layouts that you can build if you have the right blueprints.  Some layouts produce points and can be essential to climbing league rankings!</p>
+                    <p>When you view a building before buying it from the map, only 2 of the 3 layouts are visible.  You need to buy this building to know the nature of it's 3rd layout.</p>
+                    <p>Blueprints can be acquired by combining 10x ideas, packages, end-of season league rewards, or purchased from the AMAZOPOLIS in-game shop.</p>
+                </div>
+                <div id="blueprints-grid">
+                    <div class="box grid-title">Blueprint Levels and Bonuses</div>
+                    <div class="box bp">BLUEPRINT</div>
+                    <div class="box level1">Level 1</div>
+                    <div class="box level2">Level 2</div>
+                    <div class="box level3">Level 3</div>
+
+                    <div class="box bp">
+                        <img src="\assets\Blueprints\CONTAINER.PNG" alt=""/>
+                        <p>Unclaimed Blueprint</p>
+                    </div>
+                    <div class="box level1">
+                        <p></p>
+                        <p>Blueprints will remain unknown in player inventory until claimed.</p>
+                    </div>
+                    <div class="box level2">
+                        <p>Upgrades to Level 2 when you collect 4 of the same blueprint</p>
+                    </div>
+                    <div class="box level3">
+                        <p>Upgrades to Level 3 when you collect 10 of the same blueprint</p>
+                    </div>
+
+                <!--ECOLOGY BLUEPRINTS-->
+
+                    <div class="box bp">
+                        <img src="\assets\Blueprints\ECOLOGY_Waste Sorting.png" alt=""/>
+                        <p>Waste Sorting</p>
+                    </div>
+                    <div class="box level1">
+                        <p>+2 pts/hr</p>
+                        <p>+5% on the value of the Neocoins collected</p>
+                    </div>
+                    <div class="box level2">
+                        <p>+2.5 pts/hr</p>
+                        <p>+5% on the value of the Neocoins collected</p>
+                    </div>
+                    <div class="box level3">
+                        <p>+3 pts/hr</p>
+                        <p>+5% on the value of the Neocoins collected</p>
+                    </div>
+
+                    <div class="box bp">
+                        <img src="\assets\Blueprints\ECOLOGY_Green Roofs.png" alt=""/>
+                        <p>Green Roofs</p>
+                    </div>
+                    <div class="box level1">
+                        <p>+2 pts/hr</p>
+                        <p>+5% on the value of the Neocoins collected</p>
+                    </div>
+                    <div class="box level2">
+                        <p>+2.5 pts/hr</p>
+                        <p>+5% on the value of the Neocoins collected</p>
+                    </div>
+                    <div class="box level3">
+                        <p>+3 pts/hr</p>
+                        <p>+5% on the value of the Neocoins collected</p>
+                    </div>
+
+                    <div class="box bp">
+                        <img src="\assets\Blueprints\ECOLOGY_Plants and Compost.png" alt=""/>
+                        <p>Plants and Compost</p>
+                    </div>
+                    <div class="box level1">
+                        <p>+2 pts/hr</p>
+                        <p>+5% on the value of the Neocoins collected</p>
+                    </div>
+                    <div class="box level2">
+                        <p>+2.5 pts/hr</p>
+                        <p>+5% on the value of the Neocoins collected</p>
+                    </div>
+                    <div class="box level3">
+                        <p>+3 pts/hr</p>
+                        <p>+5% on the value of the Neocoins collected</p>
+                    </div>
+
+                    <div class="box bp">
+                        <img src="\assets\Blueprints\ECOLOGY_Recycled Furniture.png" alt=""/>
+                        <p>Recycled Furniture</p>
+                    </div>
+                    <div class="box level1">
+                        <p>+2 pts/hr</p>
+                        <p>+5% on the value of the Neocoins collected</p>
+                    </div>
+                    <div class="box level2">
+                        <p>+2.5 pts/hr</p>
+                        <p>+5% on the value of the Neocoins collected</p>
+                    </div>
+                    <div class="box level3">
+                        <p>+3 pts/hr</p>
+                        <p>+5% on the value of the Neocoins collected</p>
+                    </div>
+
+                    <div class="box bp">
+                        <img src="\assets\Blueprints\ECOLOGY_Eco Facade.png" alt=""/>
+                        <p>Facade</p>
+                    </div>
+                    <div class="box level1">
+                        <p>+2 pts/hr</p>
+                        <p>+5% on the value of the Neocoins collected</p>
+                    </div>
+                    <div class="box level2">
+                        <p>+2.5 pts/hr</p>
+                        <p>+5% on the value of the Neocoins collected</p>
+                    </div>
+                    <div class="box level3">
+                        <p>+3 pts/hr</p>
+                        <p>+5% on the value of the Neocoins collected</p>
+                    </div>
+
+                    <div class="box bp">
+                        <img src="\assets\Blueprints\ECOLOGY_Local Products.png" alt=""/>
+                        <p>Local Products</p>
+                    </div>
+                    <div class="box level1">
+                        <p>+2 pts/hr</p>
+                        <p>+10% on the income of a building</p>
+                    </div>
+                    <div class="box level2">
+                        <p>+2.5 pts/hr</p>
+                        <p>+10% on the income of a building</p>
+                    </div>
+                    <div class="box level3">
+                        <p>+3 pts/hr</p>
+                        <p>+10% on the income of a building</p>
+                    </div>
+
+                    <div class="box bp">
+                        <img src="\assets\Blueprints\ECOLOGY_Solar Panels.png" alt=""/>
+                        <p>Solar Panels</p>
+                    </div>
+                    <div class="box level1">
+                        <p>+2 pts/hr</p>
+                        <p>+10% on the income of a building</p>
+                    </div>
+                    <div class="box level2">
+                        <p>+2.5 pts/hr</p>
+                        <p>+10% on the income of a building</p>
+                    </div>
+                    <div class="box level3">
+                        <p>+3 pts/hr</p>
+                        <p>+10% on the income of a building</p>
+                    </div>
+
+                    <div class="box bp">
+                        <img src="\assets\Blueprints\ECOLOGY_Reconditioned Equipment.png" alt=""/>
+                        <p>Reconditioned Equipment</p>
+                    </div>
+                    <div class="box level1">
+                        <p>+2 pts/hr</p>
+                        <p>+10% on the income of a building</p>
+                    </div>
+                    <div class="box level2">
+                        <p>+2.5 pts/hr</p>
+                        <p>+10% on the income of a building</p>
+                    </div>
+                    <div class="box level3">
+                        <p>+3 pts/hr</p>
+                        <p>+10% on the income of a building</p>
+                    </div>
+
+                    <div class="box bp">
+                        <img src="\assets\Blueprints\ECOLOGY_Bicycle Garage.png" alt=""/>
+                        <p>Bicycle Garage</p>
+                    </div>
+                    <div class="box level1">
+                        <p>+2 pts/hr</p>
+                        <p>+10% on the income of a building</p>
+                    </div>
+                    <div class="box level2">
+                        <p>+2.5 pts/hr</p>
+                        <p>+10% on the income of a building</p>
+                    </div>
+                    <div class="box level3">
+                        <p>+3 pts/hr</p>
+                        <p>+10% on the income of a building</p>
+                    </div>
+
+                    <div class="box bp">
+                        <img src="\assets\Blueprints\ECOLOGY_Wind Turbines.png" alt=""/>
+                        <p>Wind Turbines</p>
+                    </div>
+                    <div class="box level1">
+                        <p>+2 pts/hr</p>
+                        <p>+10% on the income of a building</p>
+                    </div>
+                    <div class="box level2">
+                        <p>+2.5 pts/hr</p>
+                        <p>+10% on the income of a building</p>
+                    </div>
+                    <div class="box level3">
+                        <p>+3 pts/hr</p>
+                        <p>+10% on the income of a building</p>
+                    </div>
+
+                <!--COMMUNITY BLUEPRINTS-->
+
+                    <div class="box bp">
+                        <img src="\assets\Blueprints\COMMUNITY_Free Newspaper.png" alt=""/>
+                        <p>Free Newspaper</p>
+                    </div>
+                    <div class="box level1">
+                        <p>+2 pts/hr</p>
+                        <p>+5% on the value of the Neocoins collected</p>
+                    </div>
+                    <div class="box level2">
+                        <p>+2.5 pts/hr</p>
+                        <p>+5% on the value of the Neocoins collected</p>
+                    </div>
+                    <div class="box level3">
+                        <p>+3 pts/hr</p>
+                        <p>+5% on the value of the Neocoins collected</p>
+                    </div>
+
+                    <div class="box bp">
+                        <img src="\assets\Blueprints\COMMUNITY_Local Events Board.png" alt=""/>
+                        <p>Local Events Table</p>
+                    </div>
+                    <div class="box level1">
+                        <p>+2 pts/hr</p>
+                        <p>+5% on the value of the Neocoins collected</p>
+                    </div>
+                    <div class="box level2">
+                        <p>+2.5 pts/hr</p>
+                        <p>+5% on the value of the Neocoins collected</p>
+                    </div>
+                    <div class="box level3">
+                        <p>+3 pts/hr</p>
+                        <p>+5% on the value of the Neocoins collected</p>
+                    </div>
+
+                    <div class="box bp">
+                        <img src="\assets\Blueprints\COMMUNITY_Reading Box.png" alt=""/>
+                        <p>Reading Box</p>
+                    </div>
+                    <div class="box level1">
+                        <p>+2 pts/hr</p>
+                        <p>+5% on the value of the Neocoins collected</p>
+                    </div>
+                    <div class="box level2">
+                        <p>+2.5 pts/hr</p>
+                        <p>+5% on the value of the Neocoins collected</p>
+                    </div>
+                    <div class="box level3">
+                        <p>+3 pts/hr</p>
+                        <p>+5% on the value of the Neocoins collected</p>
+                    </div>
+
+                    <div class="box bp">
+                        <img src="\assets\Blueprints\COMMUNITY_Wifi.png" alt=""/>
+                        <p>WiFi Access Point</p>
+                    </div>
+                    <div class="box level1">
+                        <p>+2 pts/hr</p>
+                        <p>+5% on the value of the Neocoins collected</p>
+                    </div>
+                    <div class="box level2">
+                        <p>+2.5 pts/hr</p>
+                        <p>+5% on the value of the Neocoins collected</p>
+                    </div>
+                    <div class="box level3">
+                        <p>+3 pts/hr</p>
+                        <p>+5% on the value of the Neocoins collected</p>
+                    </div>
+
+                    <div class="box bp">
+                        <img src="\assets\Blueprints\COMMUNITY_Cultural Leaflets.png" alt=""/>
+                        <p>Cultural Leaflets</p>
+                    </div>
+                    <div class="box level1">
+                        <p>+2 pts/hr</p>
+                        <p>+5% on the value of the Neocoins collected</p>
+                    </div>
+                    <div class="box level2">
+                        <p>+2.5 pts/hr</p>
+                        <p>+5% on the value of the Neocoins collected</p>
+                    </div>
+                    <div class="box level3">
+                        <p>+3 pts/hr</p>
+                        <p>+5% on the value of the Neocoins collected</p>
+                    </div>
+
+                    <div class="box bp">
+                        <img src="\assets\Blueprints\COMMUNITY_Multilingual Reception.png" alt=""/>
+                        <p>Multilingual Reception</p>
+                    </div>
+                    <div class="box level1">
+                        <p>+2 pts/hr</p>
+                        <p>+10% on the popularity of a building</p>
+                    </div>
+                    <div class="box level2">
+                        <p>+2.5 pts/hr</p>
+                        <p>+10% on the popularity of a building</p>
+                    </div>
+                    <div class="box level3">
+                        <p>+3 pts/hr</p>
+                        <p>+10% on the popularity of a building</p>
+                    </div>
+
+                    <div class="box bp">
+                        <img src="\assets\Blueprints\COMMUNITY_Accessibility Service.png" alt=""/>
+                        <p>Accessibility Service</p>
+                    </div>
+                    <div class="box level1">
+                        <p>+2 pts/hr</p>
+                        <p>+10% on the popularity of a building</p>
+                    </div>
+                    <div class="box level2">
+                        <p>+2.5 pts/hr</p>
+                        <p>+10% on the popularity of a building</p>
+                    </div>
+                    <div class="box level3">
+                        <p>+3 pts/hr</p>
+                        <p>+10% on the popularity of a building</p>
+                    </div>
+
+                    <div class="box bp">
+                        <img src="\assets\Blueprints\COMMUNITY_Stage for Concerts.png" alt=""/>
+                        <p>Stage For Concerts</p>
+                    </div>
+                    <div class="box level1">
+                        <p>+2 pts/hr</p>
+                        <p>+10% on the popularity of a building</p>
+                    </div>
+                    <div class="box level2">
+                        <p>+2.5 pts/hr</p>
+                        <p>+10% on the popularity of a building</p>
+                    </div>
+                    <div class="box level3">
+                        <p>+3 pts/hr</p>
+                        <p>+10% on the popularity of a building</p>
+                    </div>
+
+                    <div class="box bp">
+                        <img src="\assets\Blueprints\COMMUNITY_Artists Exhibition.png" alt=""/>
+                        <p>Artists' Exhibitions</p>
+                    </div>
+                    <div class="box level1">
+                        <p>+2 pts/hr</p>
+                        <p>+10% on the popularity of a building</p>
+                    </div>
+                    <div class="box level2">
+                        <p>+2.5 pts/hr</p>
+                        <p>+10% on the popularity of a building</p>
+                    </div>
+                    <div class="box level3">
+                        <p>+3 pts/hr</p>
+                        <p>+10% on the popularity of a building</p>
+                    </div>
+
+                    <div class="box bp">
+                        <img src="\assets\Blueprints\COMMUNITY_Signing Sessions.png" alt=""/>
+                        <p>Singing Sessions</p>
+                    </div>
+                    <div class="box level1">
+                        <p>+2 pts/hr</p>
+                        <p>+10% on the popularity of a building</p>
+                    </div>
+                    <div class="box level2">
+                        <p>+2.5 pts/hr</p>
+                        <p>+10% on the popularity of a building</p>
+                    </div>
+                    <div class="box level3">
+                        <p>+3 pts/hr</p>
+                        <p>+10% on the popularity of a building</p>
+                    </div>
+
+                <!--AESTHETICS BLUEPRINTS-->
+
+                    <div class="box bp">
+                        <img src="\assets\Blueprints\AESTHETIC_Tree-lined Sidewalk.png" alt=""/>
+                        <p>Tree-lined Sidewalk</p>
+                    </div>
+                    <div class="box level1">
+                        <p>+2 pts/hr</p>
+                        <p>+5% on the value of the Neocoins collected</p>
+                    </div>
+                    <div class="box level2">
+                        <p>+2.5 pts/hr</p>
+                        <p>+5% on the value of the Neocoins collected</p>
+                    </div>
+                    <div class="box level3">
+                        <p>+3 pts/hr</p>
+                        <p>+5% on the value of the Neocoins collected</p>
+                    </div>
+
+                    <div class="box bp">
+                        <img src="\assets\Blueprints\AESTHETIC_Illuminated Display Case.png" alt=""/>
+                        <p>Illuminated Display Case</p>
+                    </div>
+                    <div class="box level1">
+                        <p>+2 pts/hr</p>
+                        <p>+5% on the value of the Neocoins collected</p>
+                    </div>
+                    <div class="box level2">
+                        <p>+2.5 pts/hr</p>
+                        <p>+5% on the value of the Neocoins collected</p>
+                    </div>
+                    <div class="box level3">
+                        <p>+3 pts/hr</p>
+                        <p>+5% on the value of the Neocoins collected</p>
+                    </div>
+
+                    <div class="box bp">
+                        <img src="\assets\Blueprints\AESTHETIC_Flower Bed.png" alt=""/>
+                        <p>Flower Beds</p>
+                    </div>
+                    <div class="box level1">
+                        <p>+2 pts/hr</p>
+                        <p>+5% on the value of the Neocoins collected</p>
+                    </div>
+                    <div class="box level2">
+                        <p>+2.5 pts/hr</p>
+                        <p>+5% on the value of the Neocoins collected</p>
+                    </div>
+                    <div class="box level3">
+                        <p>+3 pts/hr</p>
+                        <p>+5% on the value of the Neocoins collected</p>
+                    </div>
+
+                    <div class="box bp">
+                        <img src="\assets\Blueprints\AESTHETIC_Outdoor Fountain.png" alt=""/>
+                        <p>Outdoor Fountain</p>
+                    </div>
+                    <div class="box level1">
+                        <p>+2 pts/hr</p>
+                        <p>+5% on the value of the Neocoins collected</p>
+                    </div>
+                    <div class="box level2">
+                        <p>+2.5 pts/hr</p>
+                        <p>+5% on the value of the Neocoins collected</p>
+                    </div>
+                    <div class="box level3">
+                        <p>+3 pts/hr</p>
+                        <p>+5% on the value of the Neocoins collected</p>
+                    </div>
+
+                    <div class="box bp">
+                        <img src="\assets\Blueprints\AESTHETIC_Thematic Entry.png" alt=""/>
+                        <p>Thematic Entry</p>
+                    </div>
+                    <div class="box level1">
+                        <p>+2 pts/hr</p>
+                        <p>+5% on the value of the Neocoins collected</p>
+                    </div>
+                    <div class="box level2">
+                        <p>+2.5 pts/hr</p>
+                        <p>+5% on the value of the Neocoins collected</p>
+                    </div>
+                    <div class="box level3">
+                        <p>+3 pts/hr</p>
+                        <p>+5% on the value of the Neocoins collected</p>
+                    </div>
+
+                    <div class="box bp">
+                        <img src="\assets\Blueprints\AESTHETIC_Giant Logo.png" alt=""/>
+                        <p>Giant Logo</p>
+                    </div>
+                    <div class="box level1">
+                        <p>+2 pts/hr</p>
+                        <p>+10% on the popularity of a building</p>
+                    </div>
+                    <div class="box level2">
+                        <p>+2.5 pts/hr</p>
+                        <p>+10% on the popularity of a building</p>
+                    </div>
+                    <div class="box level3">
+                        <p>+3 pts/hr</p>
+                        <p>+10% on the popularity of a building</p>
+                    </div>
+
+                    <div class="box bp">
+                        <img src="\assets\Blueprints\AESTHETIC_Mural.png" alt=""/>
+                        <p>Mural</p>
+                    </div>
+                    <div class="box level1">
+                        <p>+2 pts/hr</p>
+                        <p>+10% on the popularity of a building</p>
+                    </div>
+                    <div class="box level2">
+                        <p>+2.5 pts/hr</p>
+                        <p>+10% on the popularity of a building</p>
+                    </div>
+                    <div class="box level3">
+                        <p>+3 pts/hr</p>
+                        <p>+10% on the popularity of a building</p>
+                    </div>
+
+                    <div class="box bp">
+                        <img src="\assets\Blueprints\AESTHETIC_Facade Screen.png" alt=""/>
+                        <p>Facade Screen</p>
+                    </div>
+                    <div class="box level1">
+                        <p>+2 pts/hr</p>
+                        <p>+10% on the popularity of a building</p>
+                    </div>
+                    <div class="box level2">
+                        <p>+2.5 pts/hr</p>
+                        <p>+10% on the popularity of a building</p>
+                    </div>
+                    <div class="box level3">
+                        <p>+3 pts/hr</p>
+                        <p>+10% on the popularity of a building</p>
+                    </div>
+
+                    <div class="box bp">
+                        <img src="\assets\Blueprints\AESTHETIC_Spotlights.png" alt=""/>
+                        <p>Spotlights</p>
+                    </div>
+                    <div class="box level1">
+                        <p>+2 pts/hr</p>
+                        <p>+10% on the popularity of a building</p>
+                    </div>
+                    <div class="box level2">
+                        <p>+2.5 pts/hr</p>
+                        <p>+10% on the popularity of a building</p>
+                    </div>
+                    <div class="box level3">
+                        <p>+3 pts/hr</p>
+                        <p>+10% on the popularity of a building</p>
+                    </div>
+
+                    <div class="box bp">
+                        <img src="\assets\Blueprints\AESTHETIC_Original Architecture.png" alt=""/>
+                        <p>Original Architecture</p>
+                    </div>
+                    <div class="box level1">
+                        <p>+2 pts/hr</p>
+                        <p>+10% on the popularity of a building</p>
+                    </div>
+                    <div class="box level2">
+                        <p>+2.5 pts/hr</p>
+                        <p>+10% on the popularity of a building</p>
+                    </div>
+                    <div class="box level3">
+                        <p>+3 pts/hr</p>
+                        <p>+10% on the popularity of a building</p>
+                    </div>
+
+                <!--PRODUCTIVITY BLUEPRINTS-->
+
+                    <div class="box bp">
+                        <img src="\assets\Blueprints\PRODUCTIVITY_Air Conditioning.png" alt=""/>
+                        <p>Air Conditioning</p>
+                    </div>
+                    <div class="box level1">
+                        <p>+50% income on a building's income</p>
+                        <p>+10% insurance on a building</p>
+                    </div>
+                    <div class="box level2">
+                        <p>+75% income on a building's income</p>
+                        <p>+10% insurance on a building</p>
+                    </div>
+                    <div class="box level3">
+                        <p>+100% income on a building's income</p>
+                        <p>+10% insurance on a building</p>
+                    </div>
+
+                    <div class="box bp">
+                        <img src="\assets\Blueprints\PRODUCTIVITY_Optical Fiber.png" alt=""/>
+                        <p>Fibre Optic</p>
+                    </div>
+                    <div class="box level1">
+                        <p>+50% income on a building's income</p>
+                        <p>+10% insurance on a building</p>
+                    </div>
+                    <div class="box level2">
+                        <p>+75% income on a building's income</p>
+                        <p>+10% insurance on a building</p>
+                    </div>
+                    <div class="box level3">
+                        <p>+100% income on a building's income</p>
+                        <p>+10% insurance on a building</p>
+                    </div>
+
+                    <div class="box bp">
+                        <img src="\assets\Blueprints\PRODUCTIVITY_Underground Parking.png" alt=""/>
+                        <p>Underground Parking</p>
+                    </div>
+                    <div class="box level1">
+                        <p>+50% income on a building's income</p>
+                        <p>+10% insurance on a building</p>
+                    </div>
+                    <div class="box level2">
+                        <p>+75% income on a building's income</p>
+                        <p>+10% insurance on a building</p>
+                    </div>
+                    <div class="box level3">
+                        <p>+100% income on a building's income</p>
+                        <p>+10% insurance on a building</p>
+                    </div>
+
+                    <div class="box bp">
+                        <img src="\assets\Blueprints\PRODUCTIVITY_Data Server.png" alt=""/>
+                        <p>Data Server</p>
+                    </div>
+                    <div class="box level1">
+                        <p>+50% income on a building's income</p>
+                        <p>+10% insurance on a building</p>
+                    </div>
+                    <div class="box level2">
+                        <p>+75% income on a building's income</p>
+                        <p>+10% insurance on a building</p>
+                    </div>
+                    <div class="box level3">
+                        <p>+100% income on a building's income</p>
+                        <p>+10% insurance on a building</p>
+                    </div>
+
+                    <div class="box bp">
+                        <img src="\assets\Blueprints\PRODUCTIVITY_Customer Service.png" alt=""/>
+                        <p>Customer Service</p>
+                    </div>
+                    <div class="box level1">
+                        <p>+50% income on a building's income</p>
+                        <p>+10% insurance on a building</p>
+                    </div>
+                    <div class="box level2">
+                        <p>+75% income on a building's income</p>
+                        <p>+10% insurance on a building</p>
+                    </div>
+                    <div class="box level3">
+                        <p>+100% income on a building's income</p>
+                        <p>+10% insurance on a building</p>
+                    </div>
+
+                    <div class="box bp">
+                        <img src="\assets\Blueprints\PRODUCTIVITY_Elevators.png" alt=""/>
+                        <p>Elevators</p>
+                    </div>
+                    <div class="box level1">
+                        <p>+50% income on a building's income</p>
+                        <p>+1 padlocks on a building</p>
+                    </div>
+                    <div class="box level2">
+                        <p>+75% income on a building's income</p>
+                        <p>+2 padlocks on a building</p>
+                    </div>
+                    <div class="box level3">
+                        <p>+100% income on a building's income</p>
+                        <p>+3 padlocks on a building</p>
+                    </div>
+
+                    <div class="box bp">
+                        <img src="\assets\Blueprints\PRODUCTIVITY_Videosurveillance.png" alt=""/>
+                        <p>Video Surveillance</p>
+                    </div>
+                    <div class="box level1">
+                        <p>+50% income on a building's income</p>
+                        <p>+1 padlocks on a building</p>
+                    </div>
+                    <div class="box level2">
+                        <p>+75% income on a building's income</p>
+                        <p>+2 padlocks on a building</p>
+                    </div>
+                    <div class="box level3">
+                        <p>+100% income on a building's income</p>
+                        <p>+3 padlocks on a building</p>
+                    </div>
+
+                    <div class="box bp">
+                        <img src="\assets\Blueprints\PRODUCTIVITY_Night Guard.png" alt=""/>
+                        <p>Night Guard</p>
+                    </div>
+                    <div class="box level1">
+                        <p>+50% income on a building's income</p>
+                        <p>+1 padlocks on a building</p>
+                    </div>
+                    <div class="box level2">
+                        <p>+75% income on a building's income</p>
+                        <p>+2 padlocks on a building</p>
+                    </div>
+                    <div class="box level3">
+                        <p>+100% income on a building's income</p>
+                        <p>+3 padlocks on a building</p>
+                    </div>
+
+                    <div class="box bp">
+                        <img src="\assets\Blueprints\PRODUCTIVITY_Iron Curtain.png" alt=""/>
+                        <p>Iron Curtain</p>
+                    </div>
+                    <div class="box level1">
+                        <p>+50% income on a building's income</p>
+                        <p>+1 padlocks on a building</p>
+                    </div>
+                    <div class="box level2">
+                        <p>+75% income on a building's income</p>
+                        <p>+2 padlocks on a building</p>
+                    </div>
+                    <div class="box level3">
+                        <p>+100% income on a building's income</p>
+                        <p>+3 padlocks on a building</p>
+                    </div>
+
+                    <div class="box bp">
+                        <img src="\assets\Blueprints\PRODUCTIVITY_Secretariat.png" alt=""/>
+                        <p>Secretariat</p>
+                    </div>
+                    <div class="box level1">
+                        <p>+50% income on a building's income</p>
+                        <p>+1 padlocks on a building</p>
+                    </div>
+                    <div class="box level2">
+                        <p>+75% income on a building's income</p>
+                        <p>+2 padlocks on a building</p>
+                    </div>
+                    <div class="box level3">
+                        <p>+100% income on a building's income</p>
+                        <p>+3 padlocks on a building</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+
+        </footer>
+    </body>
+</html>
